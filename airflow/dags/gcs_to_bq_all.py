@@ -7,7 +7,7 @@ from airflow.contrib.operators.gcs_to_bq import GoogleCloudStorageToBigQueryOper
 DATA_BUCKET = os.environ["GCS_BUCKET"] + "/data"
 
 CRIME_GCS_FILES = "crime_austin.csv"
-TEMP_GCS_FILES = ["temp_austin_2022.csv","temp_austin_2021.csv"]
+TEMP_22_GCS_FILES = "temp_austin_2022.csv"
 DATASET = 'austin_crime'
 
 default_args = {
@@ -81,10 +81,10 @@ with DAG(
     tags=['temp_gcs_bq'],
 ) as temp_dag:
 
-    TEMP_GCS_to_BQ = GoogleCloudStorageToBigQueryOperator(
+    TEMP_22_GCS_to_BQ = GoogleCloudStorageToBigQueryOperator(
         task_id='temp_gcs_to_bq_dag',
         bucket=DATA_BUCKET,
-        source_objects=[TEMP_GCS_FILES],
+        source_objects=[TEMP_22_GCS_FILES],
         destination_project_dataset_table=f'{DATASET}.raw_temp',
         schema_fields=[
             {'name': 'name', 'type': 'STRING', 'mode': 'NULLABLE'},
@@ -122,10 +122,11 @@ with DAG(
             {'name': 'stations', 'type': 'STRING', 'mode': 'NULLABLE'},
         ],
 
+
         skip_leading_rows=1,
         source_format='CSV',
         create_disposition='CREATE_IF_NEEDED',
         write_disposition='WRITE_TRUNCATE',
     )
 
-    TEMP_GCS_to_BQ
+    TEMP_22_GCS_to_BQ
