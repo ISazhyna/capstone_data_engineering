@@ -39,7 +39,7 @@ terraform destroy
 ```
 
 - Upload the DAGs from `airflow/dags` into the dags-folder Composer created in GCS. 
-Go to https://console.cloud.google.com/storage/browser?project=[PROJECT_NAME]. Choose created bucket (e.g. my bucket us-central1-crime-de-capsto-8ccf2137-bucket) and go to folder /dags.
+Go to https://console.cloud.google.com/storage/browser?project=[YOUR_PROJECT_NAME]. Choose created bucket (e.g. my bucket us-central1-crime-de-capsto-8ccf2137-bucket) and go to folder /dags.
 - Follow https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_4_analytics_engineering/dbt_cloud_setup.md
 instructions to set up a dbt project. Then deploy a dbt jobs to transform the data in BigQuery.
 - To visualise the data, Data Studio was used, utilizing the two views created in the dbt core model. 
