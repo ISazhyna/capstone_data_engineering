@@ -1,6 +1,5 @@
-# capstone_data_engineering
 Capstone in Data Engineering camp provided by DataTalks.
-# Topic of Project - Does weather affected crime incidents in the big city?
+# Topic of Project - Does temperature affected crime incidents in the big city?
 
 ## Problem description
 Does the temperature affect the crime rate? Last summer break 30year temperature record in Austin, TX. Did this scorching weather affect crime in the city overall? 
@@ -44,7 +43,7 @@ Go to https://console.cloud.google.com/storage/browser?project=[PROJECT_NAME]. C
 - Follow https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_4_analytics_engineering/dbt_cloud_setup.md
 instructions to set up a dbt project. Then deploy a dbt jobs to transform the data in BigQuery.
 - To visualise the data, Data Studio was used, utilizing the two views created in the dbt core model. 
-The final Data Studio dashboard can be found here https://lookerstudio.google.com/reporting/39712dcc-5d57-4e2b-9d66-ca9623e7f59b or here.
+The final Data Studio dashboard can be found here https://lookerstudio.google.com/reporting/39712dcc-5d57-4e2b-9d66-ca9623e7f59b or here https://github.com/ISazhyna/capstone_data_engineering/blob/main/DE_capstone.pdf.
 
 ## Project Description
 ### 1. Data Ingestion
@@ -67,5 +66,5 @@ The dbt repository for the data transformations can be found https://github.com/
 
 ### 4. Dashboard
 
-A pdf of the final dashboard can be found . As we can see there is no significant affect from temperature to the crime rates (even for the hottest days during long time of texas summer).
+A pdf of the final dashboard can be found https://github.com/ISazhyna/capstone_data_engineering/blob/main/DE_capstone.pdf. As we can see there is no significant affect from temperature to the crime rates (even for the hottest days during long time of Texas summer).
 
