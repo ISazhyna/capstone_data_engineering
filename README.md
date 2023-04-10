@@ -1,5 +1,5 @@
 Capstone in Data Engineering camp provided by DataTalks.
-# Topic of Project - Does temperature affected crime incidents in the big city?
+# Topic of Project - Does the temperature affect crime rates?
 
 ## Problem description
 Does the temperature affect the crime rate? Last summer break 30year temperature record in Austin, TX. Did this scorching weather affect crime in the city overall? 
